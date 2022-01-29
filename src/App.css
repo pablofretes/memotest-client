@@ -1,0 +1,142 @@
+body {
+  background-color: #2e8bc0;
+  font-family: Cairo, sans-serif;
+}
+
+.img-wrapper {
+  margin: 25px;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.img-container {
+  width: 35%;
+  height: 60%;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #222222;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+.img {
+  width: 90%;
+  height: 100%;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+.text {
+  text-align: flex-start;
+  font-weight: bolder;
+  color: black;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.useless {
+  text-align: flex-start;
+}
+
+.play-again-button {
+  background-color: orange;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0 auto;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  white-space: nowrap;
+  width: 50%;
+  margin-top: 3vw;
+}
+
+.play-again-button:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.play-again-button:main,
+.play-again-button:focus {
+  user-select: auto;
+}
+
+.play-again-button:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.play-again-button:disabled {
+  cursor: auto;
+}
+
+.style-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+  background-color: rgba(255, 102, 0, 0.912);
+  box-shadow: 0px 0px 10px 0px #e9b50b;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.memotest-root {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-items: center;
+}
+
+.counters {
+  width: 120px;
+  border-radius: 25px;
+  height: 25px;
+  text-align: center;
+  background-color: #ADD8E6;
+  margin: 5px;
+}
+
+.counters-container{
+  display: flex;
+  justify-content: 'center';
+  margin: 0 auto;
+}
+
+.leaderboard {
+  width: 50vw;
+}
