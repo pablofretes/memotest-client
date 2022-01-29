@@ -15,7 +15,7 @@ const authLink =  setContext((_, { headers }) => {
   };
 });
 
-const httpLink = new HttpLink({ uri: 'http://localhost:4000' });
+const httpLink = new HttpLink({ uri: 'https://evening-shelf-31048.herokuapp.com/' });
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
