@@ -1,8 +1,9 @@
 import React from 'react';
-import { makeStyles, ToolBar } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import AppBar from '@material-ui/core/AppBar';
 import Box from '@material-ui/core/Box';
+import ToolBar from '@mui/material/ToolBar';
 import { Link } from 'react-router-dom';
 import { useApolloClient } from '@apollo/client';
 
