@@ -11,7 +11,7 @@ const useMemotest = () => {
   const [paired, setPaired] = useState([]);
   const [turn, setTurn] = useState(0);
   const [open, setOpen] = useState(false);
-  const [saveScore, result] = useMutation(SAVE_SCORE, {
+  const [saveScore] = useMutation(SAVE_SCORE, {
     refetchQueries: [ { query: LEADERBOARD }]
   });
   const [token, setToken] = useState(null);
@@ -80,6 +80,7 @@ const useMemotest = () => {
 
 	useEffect(() => {
 		difficultySwitch(difficulty, setImages, doublePokemons, easyDifficulty, normalDifficulty, pokemonImages);
+		// eslint-disable-next-line
 	}, [difficulty])
 
   const handleClicks = (pokemon) => {

@@ -1,20 +1,7 @@
 import React from 'react';
-import { Box, Typography, Modal, makeStyles } from '@material-ui/core';
-
-const useStyles = makeStyles(() => ({
-  text: {
-    fontSize: 20,
-    fontFamily: 'Cairo',
-    fontWeight: 'bolder',
-    marginTop: 10,
-    marginLeft: 10,
-    marginRight: 10,
-    padding: 10
-  }
-}))
+import { Box, Modal } from '@material-ui/core';
 
 const ReplayModal = ({ open, setOpen, reset }) => {
-  const classes = useStyles();
   const handleClose = () => setOpen(false);
 
   return(
