@@ -54,6 +54,5 @@
   },
   "devDependencies": {
     "cypress": "^9.2.0"
-  },
-  "proxy":"https://evening-shelf-31048.herokuapp.com/"
+  }
 }
